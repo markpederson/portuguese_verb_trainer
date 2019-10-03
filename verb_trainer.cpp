@@ -48,6 +48,11 @@ void print_words_list(vector<string> words_list) {
     }
 }
 
+string get_random_word(vector<string> words_list) {
+    int word_index = rand() % words_list.size();
+    return words_list[word_index];
+}
+
 int main() {
 
     vector<string> a_endings = {"o", "a", "amos", "am", "ava", "ava", "ávamos", "avam",
@@ -97,6 +102,24 @@ int main() {
     }
 
     vector<string> words_list = read_words_file("1000_words_list.txt");
-    print_words_list(words_list);
+    // print_words_list(words_list);
     // run_test(verb_list, conjugated, verb_forms);
+
+    vector<string> random_words;
+    srand(time(NULL));
+    for (int i = 0; i < 1000; i++) {
+        random_words.push_back(get_random_word(words_list));
+    }
+
+    int count = 0;
+    string user_input;
+    while (true) {
+        cin >> user_input;
+        if (user_input == "q()") {
+            break;
+        } else {
+            cout << random_words[count] << "\n";
+            count++;
+        }
+    }
 }
