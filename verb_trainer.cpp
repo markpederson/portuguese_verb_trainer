@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <map>
+#include <fstream>
 using namespace std;
 
 void run_test(vector<string> verb_list, vector<vector<string>> conjugated, map<int, string> verb_forms) {
@@ -21,6 +22,29 @@ void run_test(vector<string> verb_list, vector<vector<string>> conjugated, map<i
             cout << "Incorrect. Try again.\n";
             continue;
         }
+    }
+}
+
+vector<string> read_words_file(string file_name) {
+    string word;
+    ifstream words_file;
+    words_file.open(file_name);
+
+    if(!words_file) {
+        cout << "feck";
+    }
+
+    vector<string> words_list;
+    while (words_file >> word) {
+        words_list.push_back(word);
+    }
+
+    return words_list;
+}
+
+void print_words_list(vector<string> words_list) {
+    for (int i = 0; i < words_list.size(); i++) {
+        cout << words_list[i] << "\n";
     }
 }
 
@@ -72,5 +96,7 @@ int main() {
         }
     }
 
-    run_test(verb_list, conjugated, verb_forms);
+    vector<string> words_list = read_words_file("1000_words_list.txt");
+    print_words_list(words_list);
+    // run_test(verb_list, conjugated, verb_forms);
 }
