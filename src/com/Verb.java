@@ -29,11 +29,11 @@ public class Verb {
 
         if (ending.equals("ar")) {
             String[] pres_endings = {"o", "a", "amos", "am"};
-            String[] imperf_endings = {"ava", "ava", "ávamos", "avam"};
+            String[] imperf_endings = {"ava", "ava", "Ã¡vamos", "avam"};
             String[] pret_endings = {"ei", "ou", "amos", "aram"};
-            String[] fut_endings = {"ei", "á", "emos", "ão"};
+            String[] fut_endings = {"ei", "Ã¡", "emos", "Ã£o"};
             String[] subj_pres_endings = {"e", "e", "emos", "em"};
-            String[] subj_imp_endings = {"asse", "asse", "ássemos", "assem"};
+            String[] subj_imp_endings = {"asse", "asse", "Ã¡ssemos", "assem"};
             String[] subj_fut_endings = {"ar", "ar", "armos", "arem"};
 
             for (int i = 0; i < 4; i++) {
@@ -58,7 +58,7 @@ public class Verb {
         }
         System.out.println("\n");
     }
-    
+
     public void print_all() {
         System.out.println("infinitive: " + infinitive);
         System.out.println("stem: " + stem);

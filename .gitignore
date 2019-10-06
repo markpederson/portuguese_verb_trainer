@@ -1,5 +1,5 @@
 a.exe
 a.exe*
-java/.idea/.
-java/out/.
-java/portuguese_verb_trainer.iml
+.idea/.
+out/*
+portuguese_verb_trainer.iml
