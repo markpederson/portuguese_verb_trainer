@@ -4,3 +4,20 @@ a.exe*
 out*
 portuguese_verb_trainer.iml
 cpp*
+android/app/build*
+android/app/libs*
+android/app/.gitignore
+android/app/app.iml
+android/app/build.gradle
+android/app/proguard-rules.pro 
+android/.gradle
+android/.idea
+android/gradle*
+android/.gitignore
+android/build.gradle
+android/gradle.properties
+android/gradlew*
+android/gradlew.bat
+android/local.properties
+android/Portuguese Verb Trainer.iml
+settings.gradle

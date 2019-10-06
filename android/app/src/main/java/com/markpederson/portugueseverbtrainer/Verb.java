@@ -1,4 +1,4 @@
-package com;
+package com.markpederson.portugueseverbtrainer;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,9 +16,9 @@ public class Verb {
     String[] cond = new String[4];
 
     String[] subj_pres = new String[4];
-//    String[] subj_pret = new String[4];
+    //    String[] subj_pret = new String[4];
     String[] subj_imp = new String[4];
-//    String[] subj_plu = new String[4];
+    //    String[] subj_plu = new String[4];
     String[] subj_fut = new String[4];
 
     String[] imperative;
