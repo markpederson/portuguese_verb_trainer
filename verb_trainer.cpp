@@ -6,6 +6,7 @@
 using namespace std;
 
 void run_test(vector<string> verb_list, vector<vector<string>> conjugated, map<int, string> verb_forms) {
+    srand(time(NULL));
     int verb_index = rand() % 15;
     int form_index = rand() % 20;
     cout << verb_index + "\n";
@@ -103,7 +104,7 @@ int main() {
 
     vector<string> words_list = read_words_file("1000_words_list.txt");
     // print_words_list(words_list);
-    // run_test(verb_list, conjugated, verb_forms);
+    run_test(verb_list, conjugated, verb_forms);
 
     vector<string> random_words;
     srand(time(NULL));
@@ -111,15 +112,15 @@ int main() {
         random_words.push_back(get_random_word(words_list));
     }
 
-    int count = 0;
-    string user_input;
-    while (true) {
-        cin >> user_input;
-        if (user_input == "q()") {
-            break;
-        } else {
-            cout << random_words[count] << "\n";
-            count++;
-        }
-    }
+    // int count = 0;
+    // string user_input;
+    // while (true) {
+    //     cin >> user_input;
+    //     if (user_input == "q()") {
+    //         break;
+    //     } else {
+    //         cout << random_words[count] << "\n";
+    //         count++;
+    //     }
+    // }
 }
