@@ -1,0 +1,5 @@
+ano, m
+dia, m
+vez, f
+coisa, f
+tempo, m
