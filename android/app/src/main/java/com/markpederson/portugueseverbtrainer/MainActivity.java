@@ -33,18 +33,18 @@ public class MainActivity extends AppCompatActivity {
         tense_ref.put(0, base_verb.pres);
         tense_ref.put(1, base_verb.pret);
         tense_ref.put(2, base_verb.imperf);
-        tense_ref.put(3, base_verb.pluperf);
-        tense_ref.put(4, base_verb.fut);
-        tense_ref.put(5, base_verb.cond);
+//        tense_ref.put(3, base_verb.pluperf);
+//        tense_ref.put(4, base_verb.fut);
+//        tense_ref.put(5, base_verb.cond);
 
         Map<Integer, String> tense_name = new HashMap<>();
-        tense_name.put(0, "presente"); tense_name.put(1, "perfeito"); tense_name.put(2, "imperfeito");
-        tense_name.put(3, "mais que perfeito"); tense_name.put(4, "futuro"); tense_name.put(5, "condicional");
+        tense_name.put(0, "presente"); tense_name.put(1, "pretérito"); tense_name.put(2, "imperfeito");
+//        tense_name.put(3, "mais que perfeito"); tense_name.put(4, "futuro"); tense_name.put(5, "condicional");
         Map<Integer, String> person_name = new HashMap<>();
         person_name.put(0, "eu"); person_name.put(1, "você"); person_name.put(2, "nós"); person_name.put(3, "vocês");
 
 
-        int rand_tense_index = index_gen.nextInt(6);
+        int rand_tense_index = index_gen.nextInt(3);
         int rand_person_index = index_gen.nextInt(4);
 
         if (rand_person_index == 1) {
